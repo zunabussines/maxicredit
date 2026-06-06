@@ -1,0 +1,10 @@
+{
+  "name": "maxicredit",
+  "version": "1.0.0",
+  "description": "Sitio web de MaxiCredit",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "test": "node --test"
+  }
+}
