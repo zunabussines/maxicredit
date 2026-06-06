@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MaxiCredit — Créditos personales rápidos y seguros</title>
+  <meta name="description" content="Créditos personales y de consumo con más de 15 años de trayectoria. Aprobación rápida, efectivo a domicilio o acreditación en cuenta. CABA y GBA.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Sora:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div data-header></div>
+
+  <!-- HERO -->
+  <section class="hero"><div class="container hero-grid">
+    <div>
+      <span class="section-label">+15 años de trayectoria</span>
+      <h1>Plata cuando<br>la <em>necesitás</em>.</h1>
+      <p class="lead">Solicitá tu crédito online, te calificamos rápido y recibís el efectivo donde estés. Sin vueltas, con trato cercano.</p>
+      <div class="hero-cta">
+        <a href="solicita-tu-credito.html" class="btn btn-primary">MI CRÉDITO AHORA</a>
+        <a href="#calculadora" class="btn btn-ghost">Simular crédito</a>
+      </div>
+      <div class="hero-stats">
+        <div><b>+15</b><span>años</span></div>
+        <div><b>24h</b><span>aprobación</span></div>
+        <div><b>CABA/GBA</b><span>cobertura</span></div>
+      </div>
+    </div>
+
+    <!-- CALCULADORA -->
+    <div class="calc-card" id="calculadora">
+      <h3>Simulá tu crédito</h3>
+      <div class="calc-row">
+        <label>Monto <output id="calc-amount-out">$300.000</output></label>
+        <input type="range" id="calc-range">
+      </div>
+      <div class="calc-row">
+        <label>Cuotas</label>
+        <div class="calc-terms" id="calc-terms"></div>
+      </div>
+      <div class="calc-result">
+        <div><span class="muted" style="font-size:13px">Cuota mensual</span><div class="big" id="calc-monthly">—</div></div>
+        <div style="text-align:right"><span class="muted" style="font-size:13px">Total</span><div id="calc-total" style="font-weight:700">—</div></div>
+      </div>
+      <a id="calc-cta" href="solicita-tu-credito.html" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:18px">Solicitar este crédito</a>
+      <p class="calc-note">Valores estimativos sujetos a calificación crediticia.</p>
+    </div>
+  </div></section>
+
+  <!-- SERVICIOS -->
+  <section class="section"><div class="container">
+    <span class="section-label">Servicios</span>
+    <h2 class="reveal">La plata, como te quede más cómodo</h2>
+    <div class="grid-3" style="margin-top:36px">
+      <div class="card reveal"><div class="ico">💵</div><h3>Efectivo a domicilio</h3><p>Coordinamos la entrega del dinero en tu casa u oficina.</p></div>
+      <div class="card reveal"><div class="ico">🏪</div><h3>Retiro en comercios</h3><p>Retirá el efectivo en alguno de nuestros comercios adheridos.</p></div>
+      <div class="card reveal"><div class="ico">🏦</div><h3>Acreditación en cuenta</h3><p>Te depositamos directo en tu cuenta bancaria.</p></div>
+    </div>
+  </div></section>
+
+  <!-- CÓMO FUNCIONA -->
+  <section class="section" style="background:var(--negro-2)"><div class="container">
+    <span class="section-label">Cómo funciona</span>
+    <h2 class="reveal">Tu crédito en 3 pasos</h2>
+    <div class="grid-3" style="margin-top:36px">
+      <div class="card reveal"><div class="step-num">01</div><h3>Solicitás online</h3><p>Completás el formulario en 2 minutos desde el celular.</p></div>
+      <div class="card reveal"><div class="step-num">02</div><h3>Te calificamos</h3><p>Evaluamos tu solicitud y te contactamos rápido.</p></div>
+      <div class="card reveal"><div class="step-num">03</div><h3>Recibís la plata</h3><p>A domicilio, en comercio adherido o en tu cuenta.</p></div>
+    </div>
+  </div></section>
+
+  <!-- POR QUÉ -->
+  <section class="section"><div class="container">
+    <span class="section-label">Por qué MaxiCredit</span>
+    <h2 class="reveal">Seguridad, compromiso y rapidez</h2>
+    <div class="grid-3" style="margin-top:36px">
+      <div class="card reveal"><div class="ico">🔒</div><h3>Seguridad</h3><p>Más de 15 años respaldando a nuestros clientes con total transparencia.</p></div>
+      <div class="card reveal"><div class="ico">🤝</div><h3>Compromiso</h3><p>Trato cercano y personalizado. Te explicamos todo sin letra chica.</p></div>
+      <div class="card reveal"><div class="ico">⚡</div><h3>Rapidez</h3><p>Calificación y aprobación ágil para que tengas la plata cuando la necesitás.</p></div>
+    </div>
+  </div></section>
+
+  <!-- RESEÑAS -->
+  <section class="section" style="background:var(--negro-2)"><div class="container">
+    <span class="section-label">Opiniones</span>
+    <h2 class="reveal">Lo que dicen nuestros clientes</h2>
+    <div class="reviews" id="reviews" style="margin-top:36px"></div>
+  </div></section>
+
+  <!-- ZONAS -->
+  <section class="section"><div class="container">
+    <span class="section-label">Cobertura</span>
+    <h2 class="reveal">Llegamos a CABA y todo el GBA</h2>
+    <p class="muted" style="margin-top:10px">Zonas Norte, Oeste y Sur. Algunas localidades:</p>
+    <div class="zonas">
+      <span class="zona-pill">CABA</span><span class="zona-pill">Berazategui</span><span class="zona-pill">Florencio Varela</span>
+      <span class="zona-pill">José C. Paz</span><span class="zona-pill">Moreno</span><span class="zona-pill">General Rodríguez</span>
+      <span class="zona-pill">Escobar</span><span class="zona-pill">Malvinas Argentinas</span><span class="zona-pill">Don Torcuato</span>
+      <span class="zona-pill">Pacheco</span><span class="zona-pill">Benavídez</span><span class="zona-pill">San Fernando</span><span class="zona-pill">Tigre</span>
+    </div>
+  </div></section>
+
+  <!-- CTA FINAL -->
+  <section class="section"><div class="container">
+    <div class="cta-band reveal">
+      <h2>¿Lo necesitás? <span class="red">Te ayudamos.</span></h2>
+      <p>Solicitá tu crédito ahora y recibí una respuesta rápida.</p>
+      <a href="solicita-tu-credito.html" class="btn btn-primary">MI CRÉDITO AHORA</a>
+    </div>
+  </div></section>
+
+  <div data-footer></div>
+
+  <script type="module" src="js/main.js"></script>
+  <script type="module" src="js/home.js"></script>
+  <script type="module">
+    import { CONFIG } from "./js/config.js";
+    const stars = n => "★".repeat(n) + "☆".repeat(5 - n);
+    document.getElementById("reviews").innerHTML = CONFIG.reviews.map(r => `
+      <div class="review reveal">
+        <div class="stars">${stars(r.stars)}</div>
+        <p>"${r.text}"</p>
+        <div class="who">${r.name}</div><div class="where">${r.place}</div>
+      </div>`).join("");
+  </script>
+</body>
+</html>

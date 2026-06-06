@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacto — MaxiCredit</title>
+  <meta name="description" content="Contactate con MaxiCredit por email o WhatsApp. Atención personalizada.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Sora:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div data-header></div>
+
+  <section class="page-head"><div class="container">
+    <span class="section-label">Contacto</span>
+    <h1>Estamos para <span class="red">ayudarte</span></h1>
+    <p>Escribinos por el medio que prefieras. Te respondemos rápido.</p>
+  </div></section>
+
+  <section class="section" style="padding-top:30px"><div class="container">
+    <div class="grid-3">
+      <a class="card" id="card-wa" target="_blank" rel="noopener"><div class="ico">💬</div><h3>WhatsApp</h3><p id="wa-text"></p></a>
+      <a class="card" id="card-mail"><div class="ico">✉️</div><h3>Email</h3><p id="mail-text"></p></a>
+      <div class="card"><div class="ico">📍</div><h3>Dirección</h3><p id="addr-text"></p></div>
+    </div>
+
+    <div style="margin-top:30px;border-radius:var(--radio);overflow:hidden;border:1px solid var(--linea)">
+      <iframe title="Mapa MaxiCredit" width="100%" height="360" style="border:0;display:block"
+        loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps?q=Entre%20R%C3%ADos%20267%2C%20Venado%20Tuerto%2C%20Santa%20Fe&output=embed"></iframe>
+    </div>
+  </div></section>
+
+  <div data-footer></div>
+
+  <script type="module" src="js/main.js"></script>
+  <script type="module">
+    import { CONFIG } from "./js/config.js";
+    const c = CONFIG.contact;
+    document.getElementById("card-wa").href = `https://wa.me/${c.whatsapp}`;
+    document.getElementById("wa-text").textContent = c.whatsappDisplay;
+    const mail = document.getElementById("card-mail");
+    mail.href = `mailto:${c.email}`;
+    document.getElementById("mail-text").textContent = c.email;
+    document.getElementById("addr-text").textContent = c.address;
+  </script>
+</body>
+</html>
