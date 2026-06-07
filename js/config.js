@@ -23,9 +23,9 @@ export const CONFIG = {
   // --- Calculadora (VALORES DE EJEMPLO — reemplazar por los reales) ---
   calculator: {
     minAmount: 50000,
-    maxAmount: 1000000,
+    maxAmount: 300000,
     stepAmount: 10000,
-    defaultAmount: 300000,
+    defaultAmount: 150000,
     terms: [3, 6, 9, 12, 18, 24],   // cuotas disponibles
     defaultTerm: 12,
     monthlyRate: 0.12,              // tasa mensual de EJEMPLO (12%). REEMPLAZAR.
@@ -33,13 +33,13 @@ export const CONFIG = {
 
   // --- Reseñas (PLACEHOLDER — inventadas, reemplazar por reales) ---
   reviews: [
-    { name: "Carla M.",   place: "Moreno, GBA Oeste",  stars: 5,
+    { name: "Carla M.",   place: "San Isidro, Zona Norte",  stars: 5,
       text: "Necesitaba la plata para un arreglo urgente y en el día me la aprobaron. Trato bárbaro y todo clarito." },
-    { name: "Diego R.",   place: "Lanús, GBA Sur",     stars: 5,
+    { name: "Diego R.",   place: "Tigre, Zona Norte",     stars: 5,
       text: "Pensé que iba a ser un trámite eterno y fue al revés. Cargué el formulario y me llamaron enseguida." },
-    { name: "Romina P.",  place: "San Fernando, GBA Norte", stars: 5,
+    { name: "Romina P.",  place: "San Fernando, Zona Norte", stars: 5,
       text: "Me explicaron las cuotas sin letra chica. Recomiendo MaxiCredit, cumplen lo que dicen." },
-    { name: "Sergio A.",  place: "CABA",               stars: 4,
+    { name: "Sergio A.",  place: "Vicente López, Zona Norte", stars: 4,
       text: "Rápido y sin tantas vueltas. La plata la recibí donde les dije. Muy conformes en casa." },
   ],
 };
