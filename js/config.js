@@ -15,9 +15,10 @@ export const CONFIG = {
   },
 
   // --- Envío del formulario (Web3Forms) ---
-  // PENDIENTE: crear cuenta gratis en https://web3forms.com, asociar el MAIL DESTINO
-  // y pegar acá la "Access Key". El mail al que llegan las solicitudes se define
-  // en el panel de Web3Forms vinculado a esta key.
+  // Las solicitudes deben llegar a: info@maxicredit.com.ar
+  // PASO PENDIENTE: entrar a https://web3forms.com, generar una Access Key para
+  // info@maxicredit.com.ar (te la envían a esa casilla) y pegarla acá abajo.
+  formRecipient: "info@maxicredit.com.ar",
   web3formsKey: "REEMPLAZAR-CON-TU-ACCESS-KEY",
 
   // --- Calculadora (VALORES DE EJEMPLO — reemplazar por los reales) ---
