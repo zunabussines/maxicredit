@@ -31,6 +31,18 @@ export const CONFIG = {
     monthlyRate: 0.12,              // tasa mensual de EJEMPLO (12%). REEMPLAZAR.
   },
 
+  // --- Localidades cubiertas (Zona Norte del GBA) ---
+  zonasNorte: [
+    "Vicente López", "Olivos", "Florida", "Munro", "La Lucila", "Villa Adelina",
+    "San Isidro", "Martínez", "Acassuso", "Beccar", "Boulogne", "San Fernando",
+    "Victoria", "Virreyes", "Tigre", "Don Torcuato", "General Pacheco", "Benavídez",
+    "Rincón de Milberg", "Nordelta", "Escobar", "Garín", "Ingeniero Maschwitz",
+    "Belén de Escobar", "Pilar", "Del Viso", "Malvinas Argentinas", "Los Polvorines",
+    "Grand Bourg", "José C. Paz", "San Miguel", "Bella Vista", "Muñiz",
+    "General San Martín", "Villa Ballester", "San Andrés", "Tres de Febrero",
+    "Caseros", "Santos Lugares",
+  ],
+
   // --- Reseñas (PLACEHOLDER — inventadas, reemplazar por reales) ---
   reviews: [
     { name: "Carla M.",   place: "San Isidro, Zona Norte",  stars: 5,

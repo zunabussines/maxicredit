@@ -4,11 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>MaxiCredit — Créditos personales rápidos y seguros</title>
-  <meta name="description" content="Créditos personales y de consumo con más de 15 años de trayectoria. Aprobación rápida, efectivo a domicilio o acreditación en cuenta. CABA y GBA.">
+  <meta name="description" content="Créditos personales y de consumo con más de 15 años de trayectoria. Aprobación rápida, efectivo a domicilio o acreditación en cuenta. Zona Norte, GBA.">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Sora:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,900&f[]=cabinet-grotesk@700,800,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -22,10 +21,9 @@
   </div></section>
 
   <!-- CALCULADORA -->
-  <section class="section calc-section"><div class="container" style="text-align:center">
-    <span class="section-label">Calculadora</span>
-    <h2 class="reveal">Simulá tu crédito en segundos</h2>
-    <div class="calc-card reveal" id="calculadora">
+  <section class="section calc-section"><div class="container">
+    <h2 class="reveal" style="margin:0 auto">Simulá tu crédito en segundos</h2>
+    <div class="calc-card" id="calculadora">
       <div class="calc-row">
         <label>Monto <output id="calc-amount-out">$150.000</output></label>
         <input type="range" id="calc-range">
@@ -43,22 +41,31 @@
     </div>
   </div></section>
 
+  <!-- FRASE / DESEO (revelado por scroll) -->
+  <section class="section" style="padding-top:0"><div class="container" style="max-width:900px;text-align:center">
+    <h2 class="reveal" data-scrub-words style="font-size:clamp(28px,4.4vw,52px);max-width:none;margin:0 auto;line-height:1.18">
+      Sabemos que a veces la plata no espera. Por eso hacemos los créditos simples, rápidos y sin letra chica.
+    </h2>
+  </div></section>
+
   <!-- SERVICIOS -->
   <section class="section"><div class="container">
-    <span class="section-label">Servicios</span>
-    <h2 class="reveal">La plata, como te quede más cómodo</h2>
-    <div class="grid-3" style="margin-top:36px">
-      <div class="card reveal"><h3>Efectivo a domicilio</h3><p>Coordinamos la entrega del dinero en tu casa u oficina.</p></div>
-      <div class="card reveal"><h3>Retiro en comercios</h3><p>Retirá el efectivo en alguno de nuestros comercios adheridos.</p></div>
-      <div class="card reveal"><h3>Acreditación en cuenta</h3><p>Te depositamos directo en tu cuenta bancaria.</p></div>
+    <div class="section-head reveal">
+      <h2>La plata, como te quede más cómodo</h2>
+    </div>
+    <div class="grid-3">
+      <div class="card reveal"><h3>Efectivo a domicilio</h3><p>Coordinamos la entrega del dinero en tu casa u oficina, con total seguridad.</p></div>
+      <div class="card reveal"><h3>Retiro en comercios</h3><p>Retirá el efectivo en alguno de nuestros comercios adheridos cuando quieras.</p></div>
+      <div class="card reveal"><h3>Acreditación en cuenta</h3><p>Te depositamos el crédito directo en tu cuenta bancaria.</p></div>
     </div>
   </div></section>
 
   <!-- CÓMO FUNCIONA -->
-  <section class="section" style="background:var(--negro-2)"><div class="container">
-    <span class="section-label">Cómo funciona</span>
-    <h2 class="reveal">Tu crédito en 3 pasos</h2>
-    <div class="grid-3" style="margin-top:36px">
+  <section class="section"><div class="container">
+    <div class="section-head reveal">
+      <h2>Tu crédito en 3 pasos</h2>
+    </div>
+    <div class="grid-3">
       <div class="card reveal"><div class="step-num">01</div><h3>Solicitás online</h3><p>Completás el formulario en 2 minutos desde el celular.</p></div>
       <div class="card reveal"><div class="step-num">02</div><h3>Te calificamos</h3><p>Evaluamos tu solicitud y te contactamos rápido.</p></div>
       <div class="card reveal"><div class="step-num">03</div><h3>Recibís la plata</h3><p>A domicilio, en comercio adherido o en tu cuenta.</p></div>
@@ -67,9 +74,10 @@
 
   <!-- POR QUÉ -->
   <section class="section"><div class="container">
-    <span class="section-label">Por qué MaxiCredit</span>
-    <h2 class="reveal">Seguridad, compromiso y rapidez</h2>
-    <div class="grid-3" style="margin-top:36px">
+    <div class="section-head reveal">
+      <h2>Seguridad, compromiso y rapidez</h2>
+    </div>
+    <div class="grid-3">
       <div class="card reveal"><h3>Seguridad</h3><p>Más de 15 años respaldando a nuestros clientes con total transparencia.</p></div>
       <div class="card reveal"><h3>Compromiso</h3><p>Trato cercano y personalizado. Te explicamos todo sin letra chica.</p></div>
       <div class="card reveal"><h3>Rapidez</h3><p>Calificación y aprobación ágil para que tengas la plata cuando la necesitás.</p></div>
@@ -77,33 +85,20 @@
   </div></section>
 
   <!-- RESEÑAS -->
-  <section class="section" style="background:var(--negro-2)"><div class="container">
-    <span class="section-label">Opiniones</span>
-    <h2 class="reveal">Lo que dicen nuestros clientes</h2>
-    <div class="reviews" id="reviews" style="margin-top:36px"></div>
+  <section class="section" id="opiniones"><div class="container">
+    <div class="section-head reveal">
+      <h2>Lo que dicen nuestros clientes</h2>
+    </div>
+    <div class="reviews" id="reviews"></div>
   </div></section>
 
-  <!-- ZONAS -->
-  <section class="section"><div class="container">
-    <span class="section-label">Cobertura</span>
-    <h2 class="reveal">Llegamos a toda la Zona Norte</h2>
-    <p class="muted" style="margin-top:10px">Estas son las localidades que cubrimos:</p>
-    <div class="zonas">
-      <span class="zona-pill">Vicente López</span><span class="zona-pill">Olivos</span><span class="zona-pill">Florida</span>
-      <span class="zona-pill">Munro</span><span class="zona-pill">La Lucila</span><span class="zona-pill">Villa Adelina</span>
-      <span class="zona-pill">San Isidro</span><span class="zona-pill">Martínez</span><span class="zona-pill">Acassuso</span>
-      <span class="zona-pill">Beccar</span><span class="zona-pill">Boulogne</span><span class="zona-pill">San Fernando</span>
-      <span class="zona-pill">Victoria</span><span class="zona-pill">Virreyes</span><span class="zona-pill">Tigre</span>
-      <span class="zona-pill">Don Torcuato</span><span class="zona-pill">General Pacheco</span><span class="zona-pill">Benavídez</span>
-      <span class="zona-pill">Rincón de Milberg</span><span class="zona-pill">Nordelta</span><span class="zona-pill">Escobar</span>
-      <span class="zona-pill">Garín</span><span class="zona-pill">Ingeniero Maschwitz</span><span class="zona-pill">Belén de Escobar</span>
-      <span class="zona-pill">Pilar</span><span class="zona-pill">Del Viso</span><span class="zona-pill">Malvinas Argentinas</span>
-      <span class="zona-pill">Los Polvorines</span><span class="zona-pill">Grand Bourg</span><span class="zona-pill">José C. Paz</span>
-      <span class="zona-pill">San Miguel</span><span class="zona-pill">Bella Vista</span><span class="zona-pill">Muñiz</span>
-      <span class="zona-pill">General San Martín</span><span class="zona-pill">Villa Ballester</span><span class="zona-pill">San Andrés</span>
-      <span class="zona-pill">Tres de Febrero</span><span class="zona-pill">Caseros</span><span class="zona-pill">Santos Lugares</span>
-    </div>
-  </div></section>
+  <!-- ZONAS (marquee) -->
+  <section class="section" id="cobertura"><div class="container" style="text-align:center;margin-bottom:46px">
+    <h2 class="reveal" style="margin:0 auto">Llegamos a toda la Zona Norte</h2>
+    <p class="muted reveal" style="margin-top:14px">Estas son las localidades que cubrimos.</p>
+  </div>
+  <div id="zonas-marquee" class="reveal"></div>
+  </section>
 
   <!-- CTA FINAL -->
   <section class="section"><div class="container">
@@ -125,8 +120,22 @@
       <div class="review reveal">
         <div class="stars">${stars(r.stars)}</div>
         <p>"${r.text}"</p>
-        <div class="who">${r.name}</div><div class="where">${r.place}</div>
+        <div class="who-row">
+          <img class="avatar" loading="lazy" alt="" src="https://picsum.photos/seed/${encodeURIComponent(r.name)}/96/96">
+          <div><div class="who">${r.name}</div><div class="where">${r.place}</div></div>
+        </div>
       </div>`).join("");
+
+    const z = CONFIG.zonasNorte;
+    const half = Math.ceil(z.length / 2);
+    const pill = n => `<span class="zona-pill">${n}</span>`;
+    const track = (arr, rev) =>
+      `<div class="marquee ${rev ? "rev" : ""}"><div class="marquee-track">${[...arr, ...arr].map(pill).join("")}</div></div>`;
+    document.getElementById("zonas-marquee").innerHTML =
+      track(z.slice(0, half), false) + track(z.slice(half), true);
   </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/motion.js"></script>
 </body>
 </html>

@@ -71,12 +71,5 @@ function mountChrome() {
   if (toggle) toggle.addEventListener("click", () => links.classList.toggle("open"));
 }
 
-function scrollReveal() {
-  const els = document.querySelectorAll(".reveal");
-  const io = new IntersectionObserver((entries) => {
-    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } });
-  }, { threshold: 0.12 });
-  els.forEach(el => io.observe(el));
-}
-
-document.addEventListener("DOMContentLoaded", () => { mountChrome(); scrollReveal(); });
+// Las animaciones de scroll las maneja js/motion.js (GSAP), con fallback propio.
+document.addEventListener("DOMContentLoaded", mountChrome);

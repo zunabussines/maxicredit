@@ -6,16 +6,14 @@
   <title>Contacto — MaxiCredit</title>
   <meta name="description" content="Contactate con MaxiCredit por email o WhatsApp. Atención personalizada.">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Sora:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,900&f[]=cabinet-grotesk@700,800,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
   <div data-header></div>
 
   <section class="page-head"><div class="container">
-    <span class="section-label">Contacto</span>
     <h1>Estamos para <span class="red">ayudarte</span></h1>
     <p>Escribinos por el medio que prefieras. Te respondemos rápido.</p>
   </div></section>
@@ -47,5 +45,8 @@
     document.getElementById("mail-text").textContent = c.email;
     document.getElementById("addr-text").textContent = c.address;
   </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/motion.js"></script>
 </body>
 </html>
