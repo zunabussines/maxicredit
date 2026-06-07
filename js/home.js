@@ -8,7 +8,7 @@ let term = cfg.defaultTerm;
 function renderTerms() {
   const wrap = document.getElementById("calc-terms");
   wrap.innerHTML = cfg.terms.map(t =>
-    `<button data-term="${t}" class="${t === term ? "active" : ""}">${t}</button>`
+    `<button type="button" data-term="${t}" aria-pressed="${t === term}" aria-label="${t} cuotas">${t}</button>`
   ).join("");
   wrap.querySelectorAll("button").forEach(b =>
     b.addEventListener("click", () => { term = Number(b.dataset.term); renderTerms(); update(); })

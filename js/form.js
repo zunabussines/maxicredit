@@ -49,7 +49,8 @@ function init() {
     showErrors(form, errors);
     if (!valid) {
       msg.className = "form-msg bad";
-      msg.textContent = "Revisá los campos marcados.";
+      msg.textContent = "Revisá los campos marcados para continuar.";
+      form.querySelector(".field.invalid input, .field.invalid select")?.focus();
       return;
     }
 
