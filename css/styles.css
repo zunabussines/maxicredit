@@ -197,7 +197,7 @@ input[type=range]{width:100%;accent-color:var(--rojo);height:6px}
 /* ===== BADGES + WHATSAPP PANEL ===== */
 .assurance{display:grid;grid-template-columns:1fr 1fr 1fr 1.05fr;gap:0;border-radius:18px;overflow:hidden;
   border:1px solid var(--line);box-shadow:var(--shadow-sm)}
-.assurance .badge{display:flex;gap:14px;align-items:flex-start;padding:30px 26px;background:var(--bg-soft)}
+.assurance .badge{display:flex;gap:14px;align-items:center;padding:30px 26px;background:var(--bg-soft)}
 .assurance .badge .ico{color:var(--navy);flex:none}
 .assurance .badge .ico svg{width:34px;height:34px}
 .assurance .badge h4{color:var(--navy);font-size:16px;margin-bottom:4px}

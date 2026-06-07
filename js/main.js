@@ -60,7 +60,7 @@ function footer() {
     <div class="footer-grid">
       <div class="footer-brand">
         <img class="logo" src="assets/logo-white.svg" alt="MaxiCredit">
-        <p>Te ofrecemos créditos personales rápidos, simples y 100% online.</p>
+        <p>Créditos personales 100% online.</p>
         <div class="footer-social">
           <a href="#" aria-label="Facebook">${I.facebook}</a>
           <a href="${c.instagram}" target="_blank" rel="noopener" aria-label="Instagram">${I.instagram}</a>

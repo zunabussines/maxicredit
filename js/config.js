@@ -45,13 +45,13 @@ export const CONFIG = {
 
   // --- Reseñas (PLACEHOLDER — inventadas, reemplazar por reales) ---
   reviews: [
-    { name: "Carla M.",   place: "San Isidro, Zona Norte",  stars: 5,
-      text: "Necesitaba la plata para un arreglo urgente y en el día me la aprobaron. Trato bárbaro y todo clarito." },
-    { name: "Diego R.",   place: "Tigre, Zona Norte",     stars: 5,
-      text: "Pensé que iba a ser un trámite eterno y fue al revés. Cargué el formulario y me llamaron enseguida." },
-    { name: "Romina P.",  place: "San Fernando, Zona Norte", stars: 5,
-      text: "Me explicaron las cuotas sin letra chica. Recomiendo MaxiCredit, cumplen lo que dicen." },
-    { name: "Sergio A.",  place: "Vicente López, Zona Norte", stars: 4,
-      text: "Rápido y sin tantas vueltas. La plata la recibí donde les dije. Muy conformes en casa." },
+    { name: "Carla M.",   place: "San Isidro",  stars: 5,
+      text: "Me la aprobaron en el día. Trato bárbaro." },
+    { name: "Diego R.",   place: "Tigre",     stars: 5,
+      text: "Cargué el formulario y me llamaron enseguida." },
+    { name: "Romina P.",  place: "San Fernando", stars: 5,
+      text: "Me explicaron todo sin letra chica. Cumplen." },
+    { name: "Sergio A.",  place: "Vicente López", stars: 4,
+      text: "Rápido y la plata donde la necesitaba." },
   ],
 };
