@@ -7,7 +7,7 @@ export const CONFIG = {
   contact: {
     company: "GABAR SA",
     cuit: "33-70893607-9",
-    email: "maxicredit_info@hotmail.com",
+    email: "info@maxicredit.com.ar",
     whatsapp: "5491162328130",        // formato internacional para wa.me (sin + ni espacios)
     whatsappDisplay: "11 6232 8130",  // como se muestra al usuario
     address: "Entre Ríos 267, Venado Tuerto (2600), Santa Fe, Argentina",
