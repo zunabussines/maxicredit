@@ -139,6 +139,7 @@ p{text-wrap:pretty}
   display:flex;align-items:center;justify-content:center;margin-bottom:18px}
 .feature .ico svg{width:26px;height:26px}
 .feature h3{font-size:20px}
+.feature p{color:var(--muted);font-size:14.5px;margin-top:6px}
 @media(max-width:860px){.features{grid-template-columns:1fr 1fr;gap:8px}
   .feature{border-left:0;border-top:1px solid var(--line);padding:26px 0}
   .feature:first-child,.feature:nth-child(2){border-top:0}}
