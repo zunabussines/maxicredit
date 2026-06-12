@@ -85,7 +85,7 @@ function footer() {
         <p class="li">${I.pin}<span>${c.address}</span></p>
       </div>
     </div>
-    <div class="footer-bottom">© ${new Date().getFullYear()} ${c.company}. Todos los derechos reservados.</div>
+    <div class="footer-bottom">© ${new Date().getFullYear()} ${c.company} · CUIT ${c.cuit}. Todos los derechos reservados.</div>
   </div></footer>`;
 }
 
